@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './ProductName.module.css';
 import img from '../../assets/poductImg_rapigen_x1.png';
+import image from './'
 
 export default function ProductName() {
   const name = '래피젠 코로나 자가 검사 키트 2개입X1박스';
