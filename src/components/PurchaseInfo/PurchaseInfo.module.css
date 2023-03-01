@@ -1,5 +1,16 @@
 @import '../../style.css';
 
+.a11y{
+  position: absolute;
+  /* 스크린 리더에 잡혀야하기 때문에 0px이면 안됨 */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  /* clip은 뭐지? 찾아보자. */
+  clip: rect(0, 0, 0, 0);
+}
+
 .purchaseInfo {
   display: flex;
   align-items: center;
@@ -72,6 +83,6 @@
   padding: 0 0.3125rem;
 }
 
-.tooltipButton::before {
+/* .tooltipButton::before {
   content: '할인률';
-}
+} */

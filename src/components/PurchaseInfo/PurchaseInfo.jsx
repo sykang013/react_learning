@@ -6,6 +6,7 @@ export default function PurchaseInfo() {
     <section className={classes.purchaseInfo}>
       <div className={classes.purchaseTooltip}>
         <h2>총 상품 금액</h2>
+        <span className={classes.a11y}>도움말</span>
         <button className={classes.tooltipButton} aria-hidden="true">
           ?
         </button>
