@@ -7,13 +7,15 @@ export default function PurchaseInfo() {
       <div className={classes.purchaseTooltip}>
         <h2>총 상품 금액</h2>
         <span className={classes.a11y}>도움말</span>
-        <button className={classes.tooltipButton} aria-hidden="true">
+        <div>
+          <button className={classes.tooltip} aria-hidden="true">
           ?
-        </button>
-        {/* <span className={classes.tooltipIsActive}>
-          총 상품금액에 배송비는 포함되어 있지 않습니다.결제시 배송비가 추가될
-          수 있습니다.
-        </span> */}
+            <span className={classes.tooltiptext}>
+            총 상품금액에 <span className={classes.bluetext}>배송비는 포함되어 있지 않습니다.<br></br></span>결제시 배송비가 추가될
+            수 있습니다.
+            </span> 
+          </button>
+        </div>
       </div>
       <div className={classes.userPurchaseInfo}>
         <h3 className={classes.userPurchaseCount}>총 수량 1개</h3>
@@ -25,3 +27,5 @@ export default function PurchaseInfo() {
     </section>
   );
 }
+
+296 /16 

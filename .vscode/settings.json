@@ -9,6 +9,8 @@
         "**/node_modules": true
     },
     "cSpell.words": [
-        "Rapigen"
+        "bluetext",
+        "Rapigen",
+        "tooltiptext"
     ]
 }
