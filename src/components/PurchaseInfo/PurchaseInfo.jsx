@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './PurchaseInfo.module.css';
-
-export default function PurchaseInfo() {
+import PurchaseCount from '../PurchaseCount/PurchaseCount.jsx'
+import ProductPrice from '../ProductPrice/ProductPrice';
+export default function PurchaseInfo({number, price}) {
   return (
     <section className={classes.purchaseInfo}>
       <div className={classes.purchaseTooltip}>
@@ -18,11 +19,11 @@ export default function PurchaseInfo() {
         </div>
       </div>
       <div className={classes.userPurchaseInfo}>
-        <h3 className={classes.userPurchaseCount}>총 수량 1개</h3>
+        <h3 className={classes.userPurchaseCount}>총 수량 {number}개</h3>
         <span className={classes.divLineSmall} aria-hidden="true">
           |
         </span>
-        <h3 className={classes.userPurchasePrice}>6,370원</h3>
+        <h3 className={classes.userPurchasePrice}>{price.toLocaleString()}원</h3>
       </div>
     </section>
   );

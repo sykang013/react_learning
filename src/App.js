@@ -8,8 +8,8 @@ import ProductName from './components/ProductName/ProductName';
 import ProductPrice from './components/ProductPrice/ProductPrice';
 import DeliveryInfo from './components/DeliveryInfo/DeliveryInfo';
 import PurchaseCount from './components/PurchaseCount/PurchaseCount';
-import PurchaseInfo from './components/PurchaseInfo/PurchaseInfo';
-import PurchaseButton from './components/PurchaseButton/PurchaseButton';
+// import PurchaseInfo from './components/PurchaseInfo/PurchaseInfo';
+// import PurchaseButton from './components/PurchaseButton/PurchaseButton';
 
 export default function App() {
   return (
@@ -20,9 +20,6 @@ export default function App() {
       <DeliveryInfo />
       <DivLine />
       <PurchaseCount />
-      <DivLine />
-      <PurchaseInfo />
-      <PurchaseButton />
     </div>
   );
 }
