@@ -23,6 +23,7 @@ export default function PurchaseInfo({number, price}) {
         <span className={classes.divLineSmall} aria-hidden="true">
           |
         </span>
+        {/* .toLocaleString() 숫자를 언어별로 표현(arabic 등). 기본은 미국. */}
         <h3 className={classes.userPurchasePrice}>{price.toLocaleString()}원</h3>
       </div>
     </section>

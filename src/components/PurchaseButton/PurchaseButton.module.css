@@ -18,6 +18,19 @@
   background-color: var(--color-primary-200);
 }
 
+.button:disabled {
+  background-color: var(--color-gray-200);
+}
+
 .logoForButton {
-  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+  width: 28px;
+  height: 28px;
+  background: no-repeat;
+  background-image: url(../../../public/logoAbled.svg);
+}
+
+.button:disabled .logoForButton{
+  background: no-repeat;
+  background-image: url(../../../public/logoDisabled.svg);
 }

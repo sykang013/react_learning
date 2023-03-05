@@ -1,4 +1,4 @@
-//리액트에서 상태변수 추가
+//리액트에서 상태변수 useState 추가
 import React, {useState} from 'react';
 import DivLine from '../DivLine/DivLine';
 import PurchaseInfo from '../PurchaseInfo/PurchaseInfo';
@@ -34,7 +34,7 @@ export default function PurchaseCount() {
     <DivLine />
     {/* 이렇게 PurchaseInfo의 인자를 지정해줄 수 있다. */}
     <PurchaseInfo number={number} price={price} />
-    <PurchaseButton />
+    <PurchaseButton number={number}/>
     </>
   );
 }
