@@ -7,7 +7,7 @@
   justify-content: space-ev;
 }
 
-.button {
+.minusButton, .plusButton {
   text-align: center;
   line-height: -100%;
   width: 2.125rem;
@@ -17,6 +17,7 @@
   color: var(--color-gray-400);
   font-size: var(--text-16px);
   font-weight: var(--font-weight100);
+  cursor: pointer;
 }
 
 .countState {
