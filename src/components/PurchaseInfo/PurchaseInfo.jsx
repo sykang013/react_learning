@@ -27,5 +27,3 @@ export default function PurchaseInfo() {
     </section>
   );
 }
-
-296 /16 

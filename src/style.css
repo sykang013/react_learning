@@ -13,13 +13,12 @@ body * ::after {
 }
 
 body {
-  /* inherit: ;따로 설정 없을시 부모요소로부터 해당 속성값 받음 */
   font-family: 'Noto Sans KR', sans-serif;
   line-height: var(--text-line-height-100percent);
   letter-spacing: var(--text-space-default);
   padding: var(--space-default);
   width: var(--container-width);
-  border: 1px solid var(--color-gray-300);
-  /* flex box */
-  /* display: flex; */
+  border: 1px solid var(--color-gray-100);
+  width: clamp(320px, 100vw, 800px);
+  margin: 0 auto;
 }
